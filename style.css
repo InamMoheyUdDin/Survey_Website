@@ -1,0 +1,57 @@
+body{
+  background-color: grey;
+  width:100%;
+  font-family: sans-serif;
+}
+
+h1, p[id="description"] {
+  margin: 1em auto;
+  text-align: center;
+  color: white;
+}
+
+form{
+  margin: 0 auto;
+}
+
+div[id="body"]{
+  width:70%;
+  background-color: white;
+  margin:0 auto;
+}
+
+label{
+  display:block;
+  margin: 0.5em 0;
+}
+
+input, select, textarea{
+  display:block;
+  width: 95%;
+  padding-top:5px;
+}
+
+input[id="yes"], input[id="no"]{
+  display:inline;
+  width: unset;
+}
+input[type="checkbox"]{
+  width: unset;
+  display: unset;
+}
+input[type="submit"]:hover{
+  background-color: white;
+}
+fieldset{
+  border:none;
+  margin: 0 auto;
+  
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  padding-top: 0;
+}
