@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  
+  </head>
+  <body>
+    <h1 id="title">Inam Mohey-Ud-Din Survey Form</h1>
+    <p id="description"> Thank you for taking the time to fill out this form.</p>
+    <div id="body">
+      <form id="survey-form" method="post">
+        <fieldset>
+          <label id="name-label">Name <input id="name" placeholder="Enter Your Name" type="text" required/></label>
+          <label id="email-label">Email<input id="email" placeholder="Enter Your Email" type="email" required/></label>
+          <label id="number-label">Age<input id="number" type="number" min="13" max="100" placeholder="Enter Your Age" required/></label>
+          <label>What City Are You Living In? (Optional)
+            <select id="dropdown">
+              <option>(Select One)</option>
+                <option>London</option>
+                  <option>Manchester</option>
+                    <option>Liverpool</option>
+                      <option>Birmingham</option>     <option>Other</option>
+            </select>
+
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Were You Born In the UK? (Required)</legend>
+          <label id="yes"><input id="yes" name="name" type="radio" value="yes" checked/> Yes
+          </label>
+          <label id="no"><input id="no" name="name" type="radio" value="no"/> No
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What Do You Enjoy Best About The UK?</legend>
+          <label id="nhs"><input id="nhs" value="nhs" type="checkbox"/> Public Healthcare (NHS)
+          </label>
+          <label id="education"><input id="education" value="education" type="checkbox"/> Education System
+          </label>
+          <label id="history"><input id="history" value="history" type="checkbox"/> History and Heritage
+          </label>
+          <label id="weather"><input id="weather" value="weather" type="checkbox"/> Weather</label>
+          <label id="other"><input id="other" value="other" type="checkbox"/> Other</label>
+        </fieldset>
+        <fieldset>
+          <label for="comments">Any Comments Or Suggestions?<textarea id="comments" rows="3" cols="30" placeholder="Add your comments here..."></textarea>
+          </label>
+          <input id="submit" type="submit" value="submit"/>
+        </fieldset>
+      
+        </fieldset>
+        
+
+      </form>
+    </div>
+
+
+    
+  </body>
+</html>
